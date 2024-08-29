@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <a href="../mc001/index.html">
+        返回点我
+    </a>
+</head>
+<body>
+    <h1 align="center">你今天的运势值是: <span id="randomNumber"></span></h1>
+
+<script>
+    // 生成一个0到100的随机数
+    function generateRandomNumber() {
+        return Math.floor(Math.random() * 101);
+    }
+
+    // 获取显示随机数的元素
+    var randomNumberElement = document.getElementById('randomNumber');
+
+    // 调用函数生成随机数，并显示在页面上
+    randomNumberElement.textContent = generateRandomNumber();
+</script>
+</body>
+</html>
